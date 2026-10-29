@@ -13,7 +13,6 @@ const fetchTitle = async (url: string): Promise<string | null> => {
   }
 }
 
-// ponytail: só a 1ª página da playlist (~100 vídeos); seguir a continuation token se precisar de mais
 const listPlaylistVideoIds = async (list: string): Promise<string[]> => {
   const res = await fetch(`https://www.youtube.com/playlist?list=${encodeURIComponent(list)}`)
   const html = await res.text()
