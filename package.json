@@ -1,0 +1,11 @@
+{
+  "name": "transcribe",
+  "version": "0.1.0",
+  "description": "CLI que baixa a transcrição de vídeos e playlists do YouTube",
+  "type": "module",
+  "bin": { "transcribe": "cli.ts" },
+  "dependencies": {
+    "youtube-transcript": "^1.3.1"
+  },
+  "license": "MIT"
+}
